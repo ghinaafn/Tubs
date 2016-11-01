@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="15dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Find Your Book Below"
         android:gravity="center"
-        android:textSize="20dp"
-        android:paddingTop="30dp"
-        />
+        android:textSize="20dp"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,16 +30,20 @@
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:textColor="#ffff"
+        android:layout_marginTop="20dp"
         android:text="SUBMIT"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingTop="20dp"
-        android:text="Find Result :"/>
+        android:text="Result :"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -53,6 +56,8 @@
             android:text="   Book Code   "/>
 
         <EditText
+            android:id="@+id/edt_rsltcode"
+            android:enabled="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="100"/>
@@ -69,6 +74,7 @@
             android:text="   Book Tittle   "/>
 
         <EditText
+            android:enabled="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="100"/>
@@ -86,6 +92,7 @@
             android:id="@+id/textView" />
 
         <EditText
+            android:enabled="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="100"/>
@@ -102,6 +109,7 @@
             android:text="   Date of Publish  "/>
 
         <EditText
+            android:enabled="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="100"/>
@@ -118,8 +126,27 @@
             android:text="   Number of Stock  "/>
 
         <EditText
+            android:enabled="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="100"/>
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Not member?"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="Login Now"
+        android:background="@drawable/button"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_loginnow" />
+
 </LinearLayout>
